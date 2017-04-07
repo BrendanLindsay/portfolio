@@ -26,7 +26,7 @@ h2:after {
 
 /* BUTTON  ----------------------------------------- */
 
-.form input[type=submit] {
+.contact-form input[type=submit] {
     font-family: 'raleway', sans-serif;
     font-weight: 500;
     font-size: 12pt;
@@ -295,12 +295,12 @@ button span {
     margin: auto;
 }
 
-.form {
+.contact-form {
     margin: 0 0 130px 0;
 }
 
-.form input,
-.form textarea {
+.contact-form input,
+.contact-form textarea {
     font-family: 'raleway', sans-serif;
     font-weight: 500;
     background-color: #fff;
@@ -309,7 +309,7 @@ button span {
     border: 0px;
 }
 
-.form textarea {
+.contact-form textarea {
     height: 134px;
 }
 
