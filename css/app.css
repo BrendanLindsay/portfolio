@@ -1,0 +1,378 @@
+/* BASE STYLES  ----------------------------------------- */
+
+/*
+Baby Blue: #11bec4
+*/
+
+h2 {
+    color: #404040;
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    padding: 102px 0;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #11bec4;
+    content: " ";
+    height: 4px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 34px;
+    border-radius: 18px;
+}
+
+/* BUTTON  ----------------------------------------- */
+
+.form input[type=submit] {
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    padding: 6px 28px;
+    background-color: #f5f5f5;
+    color: #404040;
+    outline: 0;
+    border: 2px solid #535353;
+    width: 128px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #11bec4;
+    border: 2px solid #11bec4;
+    transition: .3s;
+    color: #fff;
+}
+
+/* HEADER  ----------------------------------------- */
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/hero4.jpg");
+    background-size: cover;
+    background-position: center 0px;
+}
+
+
+button {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    padding: 16px 0;
+    color: #11bec4;
+    text-shadow: -4px 4px 6px #000;
+    letter-spacing: 3px;
+    float: left;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button span {
+    color: #fff;
+}
+
+.main-nav li {
+    list-style: none;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.main-nav li a {
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 80px;
+    letter-spacing: 2px;
+}
+
+.main-nav li a:after:hover {
+    display: block;
+}
+
+.main-nav li a:after {
+    content: '';
+    display: none;
+    background: #11bec4;
+    height: 2px;
+    max-width: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    transition-duration: 0.2s;
+    color: #11bec4;
+    text-shadow: -1px 1px 24px #6b6b6b;
+}
+
+#myNav {
+    display: none;
+}
+
+/* STICKY NAV ---------------------------------------- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(92, 92, 92, 0.8);
+    z-index: 9999;
+}
+
+.sticky button {
+    padding: 14px 0;
+}
+
+.sticky-nav ul {
+    float: right;
+}
+
+.sticky ul {
+    float: right;
+}
+
+.sticky ul li:active-link {
+    text-decoration: underline;
+    color: #11bec4;
+}
+
+/* MY STORY  ----------------------------------------- */
+
+.story {
+    background-color: #f5f5f5;
+}
+
+.story-content {
+    float: left;
+    padding-top: 80px;
+}
+
+.story-content p {
+    color: #404040;
+    font-family: 'raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+.me img {
+    margin-bottom: 80px;
+    border-radius: 800px;
+    height: 300px;
+    width: 300px;
+    float: right;
+}
+
+/* MY PROJECTS  ----------------------------------------- */
+
+.project-info {
+    margin-top: 94px;
+    float: right;
+}
+
+.project-info h3 {
+    color: #404040;
+    font-family: 'raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.project-info p {
+    color: #404040;
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.projects {
+    background-color: #fff;
+}
+
+.tile {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 100px;
+    padding: 0 0;
+}
+
+.tile:hover,
+.tile:active {
+    transform: scale(.96);
+    transition: all .4s;
+}
+
+.tile img {
+    width: 100%;
+    transition: .5s;
+    vertical-align: top;
+}
+
+.tile img:hover,
+.tile img:active {
+    filter: blur(5px);
+}
+
+.tile:after {
+    content: '';
+    position: absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background: rgba(17, 190, 196, 0.8);
+    transition: all .4s;
+    opacity: 0;
+}
+
+.tile:hover:after,
+.tile:active:after {
+    opacity: 1;
+}
+
+.middle {
+    color: #000000;
+    transition: .4s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.tile:hover .middle,
+.tile:active .middle {
+    opacity: 1;
+}
+
+.middle .button {
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 14px 28px;
+}
+
+.middle .button:hover,
+.middle .button:active {
+    background: #fff;
+    color: #11bec4;
+}
+
+/* CONTACT  ----------------------------------------- */
+
+.contact {
+    background-color: #f5f5f5;
+}
+
+.contact-info h3 {
+    color: #404040;
+    font-family: 'raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 84px 0 40px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.form {
+    margin: 0 0 130px 0;
+}
+
+.form input,
+.form textarea {
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    width: 400px;
+    height: 36px;
+    border: 0px;
+}
+
+.form textarea {
+    height: 134px;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+    color: #11bec4 !important;
+}
+
+/* FOOTER  ----------------------------------------- */
+
+footer {
+    background-color: #535353;
+}
+
+footer p {
+    font-family: 'raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #11bec4;
+    margin: 22px 0 20px 0;
+}
+
+/* ANIMATIONS --------------------------------------- */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+  opacity: 0;
+}
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated {
+  opacity: 1;
+}
+
+/* MEDIA QUERIES  ----------------------------------- */
+
+@media screen and (min-width: 1025px) {
+
+#myNav[style] {
+    display: none !important;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+
+header nav ul {
+    display: none;
+}
+
+#myNav {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+}
+
+}
+
+@media screen and (max-width: 639px) {
+
+header nav ul {
+    display: none;
+}
+
+}
