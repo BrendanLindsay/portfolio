@@ -7,11 +7,11 @@ jQuery(document).ready(function() {
 	/* Sticky nav */
 	$('.js-section-story').waypoint(function(direction) {
 		if (direction == "down") {
-			$('.sticky-nav').addClass('sticky');
-			$('.sticky').removeClass('sticky-nav');
+			$('.no-scroll').addClass('scroll');
+			$('.scroll').removeClass('no-scroll');
         } else {
-			$('.sticky').addClass('sticky-nav');
-			$('.sticky-nav').removeClass('sticky');
+			$('.scroll').addClass('no-scroll');
+			$('.no-scroll').removeClass('scroll');
 		}
 	})
 
@@ -36,17 +36,17 @@ jQuery(document).ready(function() {
 	 $('.js-wp-1').waypoint(function(direction) {
 	 	$('.js-wp-1').addClass('animated fadeInLeft');
 	 }, {
- 		offset: '25%'
+ 		offset: '60%'
  	});
 	 $('.js-wp-2').waypoint(function(direction) {
 	 	$('.js-wp-2').addClass('animated fadeInRight');
 	 }, {
- 		offset: '-25%'
+ 		offset: '60%'
  	});
 	 $('.js-wp-3').waypoint(function(direction) {
 	 	$('.js-wp-3').addClass('animated fadeInLeft');
 	}, {
-		offset: '-75%'
+		offset: '60%'
 	});
 
 	/* Form format */
