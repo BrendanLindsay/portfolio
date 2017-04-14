@@ -10,7 +10,6 @@ h2 {
     font-weight: 700;
     letter-spacing: 3px;
     padding-top: 102px;
-    padding-bottom: 80px;
     text-align: center;
 }
 
@@ -24,6 +23,10 @@ h2:after {
     margin: 0 auto;
     margin-top: 34px;
     border-radius: 18px;
+}
+
+.title {
+    padding-bottom: 80px;
 }
 
 /* BUTTON  ----------------------------------------- */
@@ -63,7 +66,7 @@ button {
     font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 38px;
-    padding: 16px;
+    padding: 16px 0 16px 20px;
     color: #11bec4;
     text-shadow: -4px 4px 6px #000;
     letter-spacing: 3px;
@@ -130,7 +133,7 @@ nav {
 
 /* STICKY NAV ---------------------------------------- */
 
-.sticky {
+.scroll {
     position: fixed;
     top: 0;
     left: 0;
@@ -140,15 +143,15 @@ nav {
     z-index: 9999;
 }
 
-.sticky-nav ul {
+.no-scroll ul {
     float: right;
 }
 
-.sticky ul {
+.scroll ul {
     float: right;
 }
 
-.sticky ul li:active-link {
+.scroll ul li:active-link {
     text-decoration: underline;
     color: #11bec4;
 }
@@ -183,8 +186,8 @@ nav {
 /* MY PROJECTS  ----------------------------------------- */
 
 .project-info {
-    margin-top: 94px;
-    float: right;
+    float: left;
+    padding-top: 120px;
 }
 
 .project-info h3 {
@@ -285,15 +288,18 @@ nav {
     background-color: #f5f5f5;
 }
 
+.contact-info {
+    float: left;
+    padding-top: 90px;
+    margin: auto;
+}
+
 .contact-info h3 {
     color: #404040;
     font-family: 'raleway', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
-    padding: 84px 0 40px 0;
-    width: 50%;
-    margin: auto;
 }
 
 .contact-form {
@@ -305,7 +311,7 @@ nav {
     font-family: 'raleway', sans-serif;
     font-weight: 500;
     background-color: #fff;
-    width: 400px;
+    width: 85%;
     height: 36px;
     border: 0px;
 }
@@ -372,12 +378,12 @@ header nav ul {
     color: #fff;
 }
 
-.me {
-    display: none;
+.no-scroll button {
+    padding-top: 36px;
 }
 
-h2 {
-    padding: 86px 0 74px 0;
+.me {
+    display: none;
 }
 
 .story-content {
@@ -393,13 +399,36 @@ h2 {
 }
 
 .project-info {
-    margin-top: 0;
     float: none;
+    padding-top: 0;
+}
+
+.project-info h3 {
+    padding: 6px 0;
 }
 
 .tile {
-    float: none;
     display: block;
+}
+
+.contact-info {
+    float: none;
+    padding-top: 0;
+}
+
+.contact-form {
+    margin: 80px auto;
+    width: 50%;
+    float: none !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form input[type=submit] {
+    margin: 0 auto;
 }
 
 }
@@ -414,13 +443,12 @@ header nav ul {
     display: none;
 }
 
-.sticky-nav button {
-    padding: 24px 0 16px 20px;
+.no-scroll button {
+    padding-top: 36px;
 }
 
 h2 {
     font-size: 34px;
-    padding: 86px 0 74px 0;
 }
 
 .story-content {
@@ -436,7 +464,30 @@ h2 {
 }
 
 .project-info {
-    margin-top: 0;
+    float: none;
+    padding-top: 0;
+}
+
+.tile {
+    display: block;
+}
+
+.contact-info {
+    float: none;
+    padding-top: 0;
+    padding-bottom: 68px;
+}
+
+.contact-form {
+    margin: 0 auto;
+    width: 80%;
+    float: none !important;
+    padding-bottom: 68px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
 }
 
 }
