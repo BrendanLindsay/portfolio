@@ -1,8 +1,8 @@
 jQuery(document).ready(function() {
 
-	/* Lightnav     $('#myNav').lightnav();*/
+	/* Lightnav  */
 
-
+	$('#myNav').lightnav();
 
 	/* Sticky nav */
 	$('.js-section-story').waypoint(function(direction) {
