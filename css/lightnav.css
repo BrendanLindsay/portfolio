@@ -11,7 +11,7 @@
   .lightnav .lightnav-button .lightnav-line {
     width: 30px;
     height: 4px;
-    background: #f4f7f7;
+    background: #fff;
     position: relative;
     transition: background .4s; }
     .lightnav .lightnav-button .lightnav-line:before {
@@ -22,7 +22,7 @@
       top: -10px;
       left: 0;
       right: 0;
-      background: #f4f7f7;
+      background: #fff;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -39,7 +39,7 @@
       bottom: -10px;
       left: 0;
       right: 0;
-      background: #f4f7f7;
+      background: #fff;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -88,7 +88,7 @@
           .lightnav .lightnav-wrap .lightnav-outer .lightnav-inner ul li a {
             color: transparent;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 40px;
             padding: 6px;
             display: block;
             -webkit-transition: all 0.3s ease;
@@ -127,7 +127,7 @@
       display: table-cell;
       vertical-align: middle; }
       .lightnav.lightnav-open .lightnav-wrap .lightnav-outer .lightnav-inner ul li a {
-        color: #f4f7f7; }
+        color: #fff; }
 
 .lightnav-collapse {
   display: none; }
