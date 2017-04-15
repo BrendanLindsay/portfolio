@@ -433,7 +433,7 @@ header nav ul {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 639px) and (min-width: 415px) {
 
 header {
     background-position: 88%;
@@ -444,7 +444,8 @@ header nav ul {
 }
 
 .no-scroll button {
-    padding-top: 36px;
+    font-size: 28px;
+    padding-top: 14px;
 }
 
 h2 {
@@ -488,6 +489,87 @@ h2 {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
+}
+
+}
+
+@media screen and (max-width: 414px) {
+
+header {
+    background-position: 82%;
+}
+
+header nav ul {
+    display: none;
+}
+
+button {
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding-top: 14px;
+    padding-left: 2px;
+}
+
+.scroll {
+    height: 54px;
+}
+
+h2 {
+    font-size: 34px;
+    padding-top: 58px;
+}
+
+.story-content {
+    float: none;
+    padding-bottom: 58px;
+}
+
+.story-content p {
+    font-size: 22px;
+}
+
+.me {
+    display: none;
+}
+
+.project-info {
+    float: none;
+    padding-top: 0;
+}
+
+.title {
+    padding-bottom: 46px;
+}
+
+.tile {
+    display: block;
+    margin-bottom: 54px;
+}
+
+.contact-info {
+    float: none;
+    padding-top: 0;
+    padding-bottom: 68px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+}
+
+.contact-form {
+    margin: 0 auto;
+    width: 80%;
+    float: none !important;
+    padding-bottom: 68px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+footer p {
+    font-size: 12px;
+    margin: 20px 0 18px 0;
 }
 
 }
