@@ -1,0 +1,543 @@
+/* FOUNDATION OVER-RIDE ------------------------------------- */
+
+.column, .columns {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row .row {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+/* BASE STYLES ------------------------------------- */
+
+h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 94px;
+}
+.gift-card p {
+    border: 3px solid #fff;
+    display: inline-block;
+    padding: 11px 48px 9px 48px;
+    text-transform: uppercase;
+}
+
+/* HEADER  ----------------------------------------- */
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+header:before {
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: -3;
+}
+
+header:after {
+    content: "";
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 100px;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: -3;
+}
+
+.cover img {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    opacity: .6;
+    z-index: -1;
+}
+
+.logo {
+    float: left;
+    margin: 94px 0 230px 0;
+}
+
+.logo:after {
+    content: "";
+    display: block;
+    width: 200vw;
+    height: 100vh;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(153, 204, 0, 0.6);
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.gift-card p {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    float: left;
+}
+
+.gift-card p:hover {
+    background-color: #fff;
+    transition: .2s;
+    color: #707070;
+}
+
+a {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #707070;
+    text-transform: uppercase;
+}
+
+nav {
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    padding: 26px 0px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding-left: 52px;
+}
+
+nav ul li a:hover {
+    color: #99cc00;
+    transition: .2s;
+}
+
+.lightnav.lightnav-open .lightnav-button .lightnav-line:before,
+.lightnav.lightnav-open .lightnav-button .lightnav-line:after {
+    background: #fff;
+}
+
+/* MAIN  ----------------------------------------- */
+
+.main h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    color: #707070;
+    padding-top: 58px;
+}
+
+.main h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c2e066;
+    content: " ";
+    height: 5px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.cycle img {
+    margin: auto;
+    display: block;
+}
+
+.cycle-info p {
+    font-family: 'oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 186px;
+}
+
+/* BANNER  -------------------------------------- */
+
+.banner {
+    height: 500px;
+    position: relative;
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 171px;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 174, 239, .6);
+}
+
+.banner-half {
+    color: #fff;
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 200px 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+.banner-center {
+    color: #fff;
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 222px 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+/* CONTENT  -------------------------------------- */
+
+.content h4 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #b4b4b4;
+    margin: 74px 0 46px;
+}
+
+.content ul {
+    padding-bottom: 95px;
+    margin-left: 0;
+}
+
+.content ul li {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #b4b4b4;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.content ul li:before {
+    content: " ";
+    display: inline-block;
+    background-color: #99cc00;
+    position: relative;
+    margin: 0 10px 4px 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+}
+
+.content img {
+    margin: auto;
+    display: block;
+    height: 145px;
+    width: 145px;
+}
+
+/* SUB FOOTER  ------------------------------------ */
+
+.sub-footer {
+    background-color: #b7b7b7;
+    color: #fff;
+    margin-top: 75px;
+    padding-bottom: 48px;
+}
+
+.sub-footer h3 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 42px 0 14px;
+}
+
+.sub-footer p {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sub-footer input,
+.sub-footer textarea {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #949494;
+    height: 36px;
+    border: 0px;
+}
+
+.sub-footer textarea {
+    height: 106px;
+}
+
+.sub-footer input:active,
+.sub-footer input:focus,
+.sub-footer input:hover {
+    background-color: #949494;
+    border: 0px;
+}
+
+.sub-footer input[type=submit] {
+    background-color: #99cc00;
+    height: 36px;
+    width: 122px;
+    float: right;
+    outline: none;
+}
+
+
+.sub-footer input[type=submit]:hover {
+    background-color: #fff;
+    color: #99cc00;
+    border: 0px;
+    transition: .2s;
+}
+
+.info {
+    padding-left: 60px;
+}
+
+
+.icon {
+    color: #949494;
+    font-size: 24px;
+    margin-right: 18px;
+    border: 2px solid #949494;
+    border-radius: 200px;
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.icon:hover {
+    color: #99cc00;
+    border: 2px solid #99cc00;
+    transition: .2s;
+}
+
+/* FOOTER  -------------------------------------- */
+
+footer {
+    background-color: #949494;
+}
+
+footer p {
+    color: #fff;
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 24px 0 20px 0;
+}
+
+/* MEDIA QUERIES  -------------------------------------- */
+
+@media screen and (max-width: 1164px) {
+.gift-card h2 {
+    font-size: 48px;
+}
+
+.gift-card p {
+    padding: 11px 36px 9px 36px;
+}
+
+.main h2 {
+    font-size: 40px;
+}
+
+.cycle-info p {
+    margin-bottom: 122px;
+}
+
+.banner p {
+    font-size: 80%;
+}
+
+.banner-half {
+    margin: 210px 0 0;
+}
+
+.banner-center {
+    margin: 228px 0 0;
+}
+
+.banner {
+    margin-bottom: 96px;
+}
+}
+
+@media screen and (min-width: 1025px) {
+
+#myNav[style] {
+    display: none !important;
+}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 640px) {
+
+.logo,
+.gift-card {
+    padding-left: 46px;
+}
+
+.gift-card h2 {
+    font-size: 46px;
+}
+
+.gift-card p {
+    font-size: 20px;
+}
+
+header nav ul {
+    display: none;
+}
+
+#myNav {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #707070;
+}
+
+.banner p {
+    font-size: 60%;
+}
+
+.banner-half {
+    margin: 224px 0 0;
+}
+
+.banner-center {
+    margin: 236px 0 0;
+}
+
+.info {
+    padding-left: 30px;
+}
+}
+
+@media screen and (max-width: 639px) {
+
+header:before {
+    right: -100%;
+}
+
+.logo {
+    max-width: 72%;
+}
+
+.gift-card h2 {
+    font-size: 46px;
+    max-width: 64%;
+}
+
+header nav ul {
+    display: none;
+}
+
+#myNav {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #707070;
+}
+
+.main h2 {
+    font-size: 36px;
+    margin-bottom: 34px;
+}
+
+.cycle img {
+    margin-bottom: 30px;
+}
+
+.cycle-info p {
+    margin-bottom: 78px;
+}
+
+.soft {
+    margin: 112px 0 0;
+}
+
+.free {
+    margin: 30px 0 0;
+}
+
+.banner-center {
+    margin: 26px 0 0;
+}
+
+.banner {
+    margin-bottom: 62px;
+}
+
+.content h4 {
+    margin: 58px 0 36px;
+    text-align: center;
+}
+
+.content ul {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.bucket img {
+    height: 124px;
+    width: 124px;
+}
+
+.content ul li:before {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 490px) {
+
+header:before {
+    right: -100%;
+}
+
+.logo {
+    max-width: 80%;
+}
+
+.gift-card h2 {
+    font-size: 42px;
+    max-width: 64%;
+}
+
+header nav ul {
+    display: none;
+}
+
+#myNav {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #707070;
+}
+}
