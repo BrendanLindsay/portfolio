@@ -219,6 +219,10 @@ nav {
     background-color: #fff;
 }
 
+#middleProject {
+    float: right;
+}
+
 .tile {
     display: inline-block;
     position: relative;
@@ -406,6 +410,10 @@ header nav ul {
     display: block;
 }
 
+#middleProject {
+    float: none;
+}
+
 .project-info {
     float: none;
     padding-top: 0;
@@ -507,6 +515,10 @@ h2 {
     display: block;
 }
 
+#middleProject {
+    float: none;
+}
+
 .contact-info {
     float: none;
     padding-top: 0;
@@ -594,6 +606,10 @@ h2 {
 .tile {
     display: block;
     margin-bottom: 54px;
+}
+
+#middleProject {
+    float: none;
 }
 
 .contact-info {
