@@ -99,7 +99,7 @@
 	            }
 	        });
 
-			if (!$(this).children('ul').length) {
+			if (!$(this).children('ul').length && !$(this).parent('ul').hasClass('main-nav')) {
 				$('.lightnav-button').click(); // close nav since there are no children
 			}
 	    });
