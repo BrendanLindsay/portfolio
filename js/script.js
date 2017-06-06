@@ -51,4 +51,5 @@ jQuery(document).ready(function() {
 
 	/* Form format */
 	 $("#phone").mask("(999) 999-9999");
+
 });
